@@ -26,6 +26,6 @@ The output obstacle map appears on the scree. Start the simulation in vrep and c
 
 # Output
 The program will display the shortest path after it is found.
-Here is google drive link for the output video of phase 3.
+Here is google drive link for the output video of phase 3 and phase 4
 https://drive.google.com/drive/folders/1rJAYblNkk_qDy1indujSHFP16hXKa171?usp=sharing
 
