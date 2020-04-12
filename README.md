@@ -22,6 +22,7 @@ The inputs for the video are (-4,4,0) as the start point and goal point as (-2,0
 The inputs are co-ordinates of start point, the initial orientation, the goal point, the clearance value and the left and right wheel RPMs.
 The inputs for video 1 are (-4,4,0) as start point and goal point as (0,-3).
 The inputs for video 2 are (-4,4,0) as start point and goal point as (4,2).
+The output obstacle map appears on the scree. Start the simulation in vrep and close the obstacle map figure. The turtlebot starts moving from the start point to the goal point.
 
 # Output
 The program will display the shortest path after it is found.
