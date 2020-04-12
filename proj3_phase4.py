@@ -157,7 +157,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [0,rpm1]
                         theta[j] = new_theta
                         break
@@ -167,7 +166,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([0,rpm1])
                 
     new_node,new_theta=action_set(current_node, 0,rpm2,theta[i])
@@ -181,7 +179,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [0,rpm2]
                         theta[j] = new_theta
                         break
@@ -191,7 +188,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([0,rpm2])
                 
     new_node,new_theta=action_set(current_node, rpm1,rpm2,theta[i])
@@ -205,7 +201,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm1,rpm2]
                         theta[j] = new_theta
                         break
@@ -215,7 +210,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm1,rpm2])
                 
     new_node,new_theta=action_set(current_node, rpm1,rpm1,theta[i])
@@ -229,7 +223,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm1,rpm1]
                         theta[j] = new_theta
                         break
@@ -239,7 +232,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm1,rpm1])
                 
     new_node,new_theta=action_set(current_node, rpm2,rpm2,theta[i])
@@ -253,7 +245,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm2,rpm2]
                         theta[j] = new_theta
                         break
@@ -263,7 +254,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm2,rpm2])
                 
     new_node,new_theta=action_set(current_node, rpm2,rpm1,theta[i])
@@ -277,7 +267,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm2,rpm1]
                         theta[j] = new_theta
                         break
@@ -287,7 +276,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm2,rpm1])
                 
     new_node,new_theta=action_set(current_node, rpm2,0,theta[i])
@@ -301,7 +289,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm2,0]
                         theta[j] = new_theta
                         break
@@ -311,7 +298,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm2,0]) 
                 
     new_node,new_theta=action_set(current_node, rpm1,0,theta[i])
@@ -325,7 +311,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm1,0]
                         theta[j] = new_theta
                         break
@@ -335,7 +320,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm1,0]) 
                 
     v_parent_node.append(parent_node.pop(i))
@@ -411,14 +395,8 @@ clientID=vrep.simxStart('127.0.0.1',19999,True,True,5000,5) # Connect to V-REP
 if clientID!=-1:
     print ('Connected to remote API server')
 
-    # Now try to retrieve data in a blocking fashion (i.e. a service call):
-    #res,objs=vrep.simxGetObjects(clientID,vrep.sim_handle_all,vrep.simx_opmode_blocking)
-    #if res==vrep.simx_return_ok:
-    #    print ('Number of objects in the scene: ',len(objs))
-    #else:
-    #    print ('Remote API function call returned with error code: ',res)
     time = 0
-#retrieve motor  handles
+
     errorCode,left_motor_handle=vrep.simxGetObjectHandle(clientID,'wheel_left_joint',vrep.simx_opmode_blocking)
     errorCode,right_motor_handle=vrep.simxGetObjectHandle(clientID,'wheel_right_joint',vrep.simx_opmode_blocking)
     r, signalValue = vrep.simxGetFloatSignal(clientID, 'Turtlebot2_simulation_time', vrep.simx_opmode_streaming)
@@ -429,13 +407,10 @@ if clientID!=-1:
         time = 0
         err_code1 = 1
         err_code2 = 2
-        #print(type(k[0]))
         while(err_code1 != 0 and err_code2 != 0):
             err_code1 = vrep.simxSetJointTargetVelocity(clientID, left_motor_handle, k[0], vrep.simx_opmode_streaming)
-            #print(err_code1)
 
             err_code2 = vrep.simxSetJointTargetVelocity(clientID, right_motor_handle, k[1], vrep.simx_opmode_streaming)
-            #print(err_code2)
 
         r, signalValue = vrep.simxGetFloatSignal(clientID, 'Turtlebot2_simulation_time', vrep.simx_opmode_buffer)
 
@@ -448,30 +423,6 @@ if clientID!=-1:
     errorCode=vrep.simxSetJointTargetVelocity(clientID,left_motor_handle,0, vrep.simx_opmode_streaming)
     errorCode=vrep.simxSetJointTargetVelocity(clientID,right_motor_handle,0, vrep.simx_opmode_streaming)
 
-    '''
-    steps = [[-4, -4], [-3.85, -4.0], [-3.77, -4.0], [-3.62, -4.0], [-3.54, -4.0]]
-    movement = [ [5,10] ]
-    #movement =[[5, 10], [10, 5], [5, 10], [10, 5], [5, 10], [10, 5], [0, 10], [10, 0], [0, 10], [10, 0], [5, 10], [5, 5], [10, 5], [5, 10], [5, 0], [5, 10], [10, 5], [10, 10], [5, 10], [10, 5], [10, 10], [0, 5]]
-    count=0
-    #print(len(movement))
-    for i in movement:
-        errorCode=vrep.simxSetJointTargetVelocity(clientID,left_motor_handle,i[0], vrep.simx_opmode_streaming)
-        errorCode=vrep.simxSetJointTargetVelocity(clientID,right_motor_handle,i[1],vrep.simx_opmode_streaming)
-        if count==len(movement):
-            time.sleep(0)
-        else :
-            #print(steps[count])
-            count=count+1
-            #print(count)
-            time=0
-            r,signalValue=vrep.simxGetFloatSignal(clientID,'Turtlebot2_simulation_time',vrep.simx_opmode_buffer)
-            while(time<=2):
-                r,signalValue2=vrep.simxGetFloatSignal(clientID,'Turtlebot2_simulation_time',vrep.simx_opmode_buffer)
-                time=signalValue2-signalValue
-                print("this",time)
-    errorCode=vrep.simxSetJointTargetVelocity(clientID,left_motor_handle,0, vrep.simx_opmode_streaming)
-    errorCode=vrep.simxSetJointTargetVelocity(clientID,right_motor_handle,0, vrep.simx_opmode_streaming)
-    '''
     # Before closing the connection to V-REP, make sure that the last command sent out had time to arrive. You can guarantee this with (for example):
     vrep.simxGetPingTime(clientID)
 

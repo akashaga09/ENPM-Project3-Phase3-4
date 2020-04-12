@@ -157,7 +157,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [0,rpm1]
                         theta[j] = new_theta
                         break
@@ -167,7 +166,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([0,rpm1])
                 
     new_node,new_theta=action_set(current_node, 0,rpm2,theta[i])
@@ -181,7 +179,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [0,rpm2]
                         theta[j] = new_theta
                         break
@@ -191,7 +188,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([0,rpm2])
                 
     new_node,new_theta=action_set(current_node, rpm1,rpm2,theta[i])
@@ -205,7 +201,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm1,rpm2]
                         theta[j] = new_theta
                         break
@@ -215,7 +210,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm1,rpm2])
                 
     new_node,new_theta=action_set(current_node, rpm1,rpm1,theta[i])
@@ -229,7 +223,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm1,rpm1]
                         theta[j] = new_theta
                         break
@@ -239,7 +232,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm1,rpm1])
                 
     new_node,new_theta=action_set(current_node, rpm2,rpm2,theta[i])
@@ -253,7 +245,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm2,rpm2]
                         theta[j] = new_theta
                         break
@@ -263,7 +254,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm2,rpm2])
                 
     new_node,new_theta=action_set(current_node, rpm2,rpm1,theta[i])
@@ -277,7 +267,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm2,rpm1]
                         theta[j] = new_theta
                         break
@@ -287,7 +276,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm2,rpm1])
                 
     new_node,new_theta=action_set(current_node, rpm2,0,theta[i])
@@ -301,7 +289,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm2,0]
                         theta[j] = new_theta
                         break
@@ -311,7 +298,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm2,0]) 
                 
     new_node,new_theta=action_set(current_node, rpm1,0,theta[i])
@@ -325,7 +311,6 @@ while(flag!=1):
                         parent_node[j]=current_node
                         cost_to_come[j] = cost_to_come[i]+distance( current_node , new_node )
                         cost_to_go[j] = cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node )
-                        #cost_to_go[j] = distance( goal_node , new_node )
                         action_steps[j] = [rpm1,0]
                         theta[j] = new_theta
                         break
@@ -335,7 +320,6 @@ while(flag!=1):
                 theta.append(new_theta)
                 cost_to_come.append(cost_to_come[i] + distance( current_node , new_node ))
                 cost_to_go.append(cost_to_come[i] + distance( current_node , new_node ) + distance( goal_node , new_node ))
-                #cost_to_go.append(distance( goal_node , new_node ))
                 action_steps.append([rpm1,0]) 
                 
     v_parent_node.append(parent_node.pop(i))
