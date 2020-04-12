@@ -12,14 +12,16 @@ Implemented a Non-Holonomous Differential Drive Robot Using A* Algorithm
 1. math library
 2. matplotlib library
 3. sys library
+4. numpy
 
 # Instructions to run for phase 3
-The inputs are co-ordinates of start point, goal point and orientation of start point.
-The inputs for start point are (-4,4), end point are (-2,0) and orientation is given as 0.
+The inputs are co-ordinates of start point, the initial orientation, the goal point, the clearance value and the left and right wheel RPMs.
+The inputs for the video are (-4,4,0) as the start point and goal point as (-2,0).
 
 # Instructions to run for phase 4
-The inputs for video 1 are (-4,4), goal point are (0,-3) and orientation is 0.
-The inputs for video 2 are (-4,4), goal point are (4,2) and orientation is 0.
+The inputs are co-ordinates of start point, the initial orientation, the goal point, the clearance value and the left and right wheel RPMs.
+The inputs for video 1 are (-4,4,0) as start point and goal point as (0,-3).
+The inputs for video 2 are (-4,4,0) as start point and goal point as (4,2).
 
 # Output
 The program will display the shortest path after it is found.
